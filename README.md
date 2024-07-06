@@ -27,6 +27,8 @@ hugo server
 
 Visit [stack.jimmycai.com](https://stack.jimmycai.com)
 
+Список моих изменений описан [тут](https://buliway.ru/p/мои-изменения-в-теме-hugo-stack/)
+
 ## Copyright
 
 **Licensed under the GNU General Public License v3.0**

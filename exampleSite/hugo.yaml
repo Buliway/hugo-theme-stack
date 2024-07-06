@@ -1,46 +1,25 @@
-baseurl: https://example.com
-languageCode: en-us
+baseurl: https://buliway.ru
+languageCode: ru-RU
 theme: hugo-theme-stack
-paginate: 3
-title: Example Site
-copyright: Example Person
+paginate: 10
+title: Buliway
+copyright: Buliway
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
-DefaultContentLanguage: en
+DefaultContentLanguage: ru
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage: false
 
 languages:
-    en:
-        languageName: English
-        title: Example Site
+    ru:
+        languageName: Russian
         weight: 1
+        timeZone: Europe/Moscow
         params:
-            description: Example description
-    zh-cn:
-        languageName: 中文
-        title: 演示站点
-        weight: 2
-        params:
-            description: 演示说明
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        weight: 3
-        params:
-            description: وصف تجريبي
-
-services:
-    # Change it to your Disqus shortname before using
-    disqus:
-        shortname: "hugo-theme-stack"
-    # GA Tracking ID
-    googleAnalytics:
-        id:
+            description: Блог о программировании # Это описание сайта, а не языка
 
 permalinks:
     post: /p/:slug/
@@ -51,19 +30,15 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon:  # Это иконка сайта. Сначала создаём `static/favicon.ico`, потом пишем в это поле `/favicon.ico` (/ обязателен)
 
     footer:
-        since: 2020
+        since: 2024
         customText:
 
-    dateFormat:
-        published: Jan 02, 2006
-        lastUpdated: Jan 02, 2006 15:04 MST
-
     sidebar:
-        emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        # emoji: 🍥
+        subtitle: Текст под сайтом
         avatar:
             enabled: true
             local: true
@@ -78,8 +53,8 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: true
-        provider: disqus
+        enabled: false
+        provider: remark42
 
         disqusjs:
             shortname:
@@ -163,15 +138,15 @@ params:
     widgets:
         homepage:
             - type: search
-            - type: archives
-              params:
-                  limit: 5
             - type: categories
               params:
                   limit: 10
             - type: tag-cloud
               params:
-                  limit: 10
+                  limit: 20
+            - type: archives
+              params:
+                  limit: 5
         page:
             - type: toc
 
@@ -194,7 +169,7 @@ params:
         toggle: true
 
         # Available values: auto, light, dark
-        default: auto
+        default: dark
 
     imageProcessing:
         cover:
@@ -211,15 +186,34 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/Buliway/
           params:
               icon: brand-github
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
+        - identifier: discord
+          name: Discord
+          url: https://discord.gg/MwKdpYujYh
           params:
-              icon: brand-twitter
+              icon: brand-discord
+
+        - identifier: telegram
+          name: Telegram
+          url: https://t.me/+q6STihSO6XQ4Mzhi
+          params:
+              icon: brand-telegram
+
+        - identifier: email
+          name: Email
+          url: mailto:example@example.com
+          params:
+              icon: mail
+
+        - identifier: boosty
+          name: Boosty
+          url: https://boosty.to/buliway
+          params:
+              icon: coin
+
 
 related:
     includeNewer: true
@@ -249,3 +243,5 @@ markup:
         lineNos: true
         lineNumbersInTable: true
         tabWidth: 4
+
+enableGitInfo: true

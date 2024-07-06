@@ -71,3 +71,7 @@ footer:
 
     designedBy:
         other: Theme {{ .Theme }} designed by {{ .DesignedBy }}
+
+tags:
+    web: Web
+    hugo: Hugo

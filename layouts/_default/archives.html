@@ -4,7 +4,7 @@
         {{- $taxonomy := $.Site.GetPage "taxonomyTerm" "categories" -}}
         {{- $terms := $taxonomy.Pages -}}
         {{ if $terms }}
-        <h2 class="section-title">{{ $taxonomy.Title }}</h2>
+        <h2 class="section-title">{{ T "widget.categoriesCloud.title" }}</h2>
         <div class="subsection-list">
             <div class="article-list--tile">
                 {{ range $terms }}
@@ -14,6 +14,19 @@
         </div>
         {{ end }}
     </header>
+
+    <section class="widget tagCloud">
+        <h2 class="section-title">{{ T "widget.tagCloud.title" }}</h2>
+        <div class="tagCloud-tags">
+            {{ range first 1000 $.Site.Taxonomies.tags.ByCount }}
+                {{ $tagID := printf "tags.%s" (.Page.Title | urlize | lower) }}
+                {{ $translation := i18n $tagID }}
+                <a href="{{ .Page.RelPermalink }}" class="font_size_{{ .Count }}">
+                    {{ $translation }}
+                </a>
+            {{ end }}
+        </div>
+    </section>
 
     {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
     {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}

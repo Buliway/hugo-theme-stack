@@ -3,6 +3,9 @@
     flex-direction: column;
 
     .widget-icon {
+        display: flex;
+        align-items: center; /* Центрирование по вертикали */
+        gap: 10px; /* Расстояние между SVG и текстом */
         svg {
             width: 32px;
             height: 32px;
