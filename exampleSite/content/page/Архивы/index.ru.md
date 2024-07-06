@@ -1,8 +1,9 @@
 ---
-title: "Archives"
-date: 2019-05-28
+title: "Архивы"
+date: 2024-06-28
 layout: "archives"
-slug: "archives"
+aliases:
+  - archives
 menu:
     main:
         weight: -70

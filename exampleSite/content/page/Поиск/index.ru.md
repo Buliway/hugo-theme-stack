@@ -1,6 +1,7 @@
 ---
-title: "Search"
-slug: "search"
+title: "Поиск"
+aliases:
+  - search
 layout: "search"
 outputs:
     - html
