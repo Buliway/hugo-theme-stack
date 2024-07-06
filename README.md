@@ -10,12 +10,18 @@ Card-style Hugo theme designed for bloggers.
 
 ## Quickstart
 
-Use this template: [CaiJimmy/hugo-theme-stack-starter](https://github.com/CaiJimmy/hugo-theme-stack-starter)
+```sh
+hugo new site hugo-blog
+cd hugo-blog
+git clone https://github.com/Buliway/hugo-theme-stack/ themes/hugo-theme-stack
+cp -r themes/hugo-theme-stack/exampleSite/* ./
+rm hugo.toml
+hugo server
+```
 
 ## Demo
 
-* Starter template demo: [demo.stack.jimmycai.com](https://demo.stack.jimmycai.com)
-* Dev build: [dev.stack.jimmycai.com](https://dev.stack.jimmycai.com)
+* https://buliway.ru/
 
 ## Documentation
 
