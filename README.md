@@ -6,6 +6,8 @@
 
 Card-style Hugo theme designed for bloggers.
 
+Мой форк содержит изменения, которые я сделал для своего сайта https://buliway.ru/
+
 ## Quickstart
 
 Use this template: [CaiJimmy/hugo-theme-stack-starter](https://github.com/CaiJimmy/hugo-theme-stack-starter)
