@@ -20,6 +20,12 @@ list:
         many: Подразделы
         other: Подразделы
 
+    categories: 
+        other: Категории
+
+    tags:
+        other: Теги
+
 article:
     back:
         other: Назад

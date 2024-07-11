@@ -16,6 +16,12 @@ list:
         one: Subsection
         other: Subsections
 
+    categories: 
+        other: Categories
+
+    tags:
+        other: Tags
+
 article:
     back:
         other: Back
