@@ -19,8 +19,14 @@ list:
     categories: 
         other: Categories
 
+    category:
+        other: Category
+
     tags:
         other: Tags
+
+    tag:
+        other: Tag
 
 article:
     back:

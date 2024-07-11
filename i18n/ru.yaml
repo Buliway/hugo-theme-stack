@@ -23,8 +23,14 @@ list:
     categories: 
         other: Категории
 
+    category:
+        other: Категория
+
     tags:
         other: Теги
+
+    tag:
+        other: Тег
 
 article:
     back:

@@ -24,7 +24,15 @@
     {{ $pag := .Paginate ($notHidden) }}
 
     <!-- {TAXONOMY_TYPE}: {TAXONOMY_TERM} -->
-    {{ $title = slice (title .Data.Singular) ": " $title }}
+    {{ $taxonomyTerm := .Title }}
+    {{ $taxonomyType := T (printf "list.%s" .Data.Singular | urlize | lower) }}
+
+    {{ if eq (lower .Section) "tags" }}
+        {{ $translatedTag := T (printf "tags.%s" $taxonomyTerm | urlize | lower) }}
+        {{ $taxonomyTerm = $translatedTag | default $taxonomyTerm }}
+    {{ end }}
+
+    {{ $title = slice (title $taxonomyType) ": " $taxonomyTerm }}
 
     {{ if .Paginator.HasPrev }}
         <!-- Add page number-->
@@ -33,6 +41,9 @@
 
     {{ $title = $title | append " - " $siteTitle }}
     {{ $title = delimit $title "" }}
+{{- else if eq .Kind "taxonomy" -}}
+    <!-- Taxonomy overview page (e.g., /tags/, /categories/) -->
+    {{ $title = T (printf "list.%s" $title | urlize | lower) }}
 {{- end -}}
 
 {{ return $title }}
