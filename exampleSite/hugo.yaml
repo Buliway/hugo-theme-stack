@@ -244,4 +244,4 @@ markup:
         lineNumbersInTable: true
         tabWidth: 4
 
-enableGitInfo: true
+#enableGitInfo: true
