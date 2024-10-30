@@ -1,10 +1,9 @@
 ---
-title: "Обо мне"
+title: "About Me"
 description:
 date: '2024-07-03'
 aliases:
   - about
-  - about-us
   - contact
 license: CC BY-NC-ND
 menu:
@@ -14,4 +13,4 @@ menu:
             icon: user
 ---
 
-Тут информация о блогере
+Text

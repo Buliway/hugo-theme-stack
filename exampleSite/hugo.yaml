@@ -1,5 +1,6 @@
 baseurl: https://buliway.ru
 languageCode: ru-RU
+# languageCode: en-us
 theme: hugo-theme-stack
 paginate: 10
 title: Buliway
@@ -19,7 +20,16 @@ languages:
         weight: 1
         timeZone: Europe/Moscow
         params:
-            description: Блог о программировании # Это описание сайта, а не языка
+            description: Блог о программировании, Linux, эргономике и ЗОЖ # Это описание сайта, а не языка
+            sidebar:
+                subtitle: Люблю программирование, Linux, эргономику и ЗОЖ.
+    en:
+        languageName: English
+        weight: 2
+        params:
+            description: Blog about programming, Linux, ergonomics and healthy lifestyle
+            sidebar:
+                subtitle: I love programming, Linux, ergonomics and healthy lifestyle.
 
 permalinks:
     post: /p/:slug/
@@ -38,7 +48,7 @@ params:
 
     sidebar:
         # emoji: 🍥
-        subtitle: Текст под сайтом
+        # subtitle: Текст под сайтом
         avatar:
             enabled: true
             local: true
@@ -208,11 +218,11 @@ menu:
           params:
               icon: mail
 
-        - identifier: boosty
-          name: Boosty
-          url: https://boosty.to/buliway
-          params:
-              icon: coin
+        # - identifier: youtube
+        #   name: YouTube
+        #   url: https://www.youtube.com/channel/UCR49QW1nWAAQ27CzOV8a3tw
+        #   params:
+        #       icon: brand-youtube
 
 
 related:

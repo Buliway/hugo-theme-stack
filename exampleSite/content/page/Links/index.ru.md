@@ -3,10 +3,6 @@ title: Ссылки
 aliases:
   - links
 links:
-  - title: Boosty
-    description: Поддержать меня на Boosty
-    website: https://boosty.to/buliway
-    image: /boosty.png
   - title: Discord
     description: Мой сервер Discord
     website: https://discord.gg/MwKdpYujYh

@@ -38,7 +38,7 @@
 
 @for $i from 1 through length($defaultTagBackgrounds) {
     .article-category:nth-child(#{length($defaultTagBackgrounds)}n + #{$i}) a {
-        background: nth($defaultTagBackgrounds, $i);
+        background: #0177b8;
         color: nth($defaultTagColors, $i);
     }
 }
