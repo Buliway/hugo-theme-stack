@@ -43,7 +43,7 @@ Within Markdown, you can use HTML code to change the visual style. For example, 
 
 If you want to include a Markdown symbol as plain text, without triggering any formatting, use `\` before it. I did this with the example above, which originally looks like this: `\<\!\-\-more\-\-\>`.
 
-When linking to another post, I prefer using absolute paths relative to the `content` folder. For example, if I want to link to a post in `content/page/Archives`, I’d write it [like this]({{< ref "/page/Архивы" >}}), which in Markdown looks \[like this\]\(\{\{\< ref "/page/Archives" \>\}\}\). This will work even if there are multiple `.md` files in the `Archives` folder for different languages. It will redirect to the page matching the user’s selected language.
+When linking to another post, I prefer using absolute paths relative to the `content` folder. For example, if I want to link to a post in `content/page/Archives`, I’d write it [like this]({{< ref "/page/Archives" >}}), which in Markdown looks \[like this\]\(\{\{\< ref "/page/Archives" \>\}\}\). This will work even if there are multiple `.md` files in the `Archives` folder for different languages. It will redirect to the page matching the user’s selected language.
 
 A text divider, like the one below, is written as `---` on a new line, with empty lines above and below it.
 
